@@ -37,345 +37,81 @@
 			<Run Text="SY"/>
 		</TextBlock>
 		<Grid x:Name="gridokna" Grid.Row="1" Margin="20">
-			<Grid.RowDefinitions>
-				<RowDefinition/>
-				<RowDefinition/>
-				<RowDefinition/>
-				<RowDefinition/>
-				<RowDefinition/>
-			</Grid.RowDefinitions>
 			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="0.65*"/>
-				<ColumnDefinition Width="0.35*"/>
+				<ColumnDefinition Width="0.7*"/>
+				<ColumnDefinition Width="0.3*"/>
 			</Grid.ColumnDefinitions>
-			<Grid x:Name="klawiatura" Grid.Column="1" Grid.RowSpan="5" Margin="0">
-				<Grid.RowDefinitions>
-					<RowDefinition/>
-					<RowDefinition/>
-					<RowDefinition/>
-					<RowDefinition/>
-					<RowDefinition/>
-					<RowDefinition/>
-				</Grid.RowDefinitions>
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition/>
-					<ColumnDefinition/>
-					<ColumnDefinition/>
-					<ColumnDefinition/>
-				</Grid.ColumnDefinitions>
-				<Button x:Name="zero" Content="0" HorizontalAlignment="Stretch" Margin="0" Grid.Row="4" VerticalAlignment="Stretch" FontSize="64" FontWeight="Bold" FontFamily="Wide Latin" Grid.ColumnSpan="2" Click="liczba_Click">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<Button x:Name="five" Content="5" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" VerticalAlignment="Stretch" Grid.Column="1" FontSize="64" FontFamily="Wide Latin" FontWeight="Bold" Click="liczba_Click">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<Button x:Name="coma" Content="," HorizontalAlignment="Stretch" Margin="0" Grid.Row="4" VerticalAlignment="Stretch" Grid.Column="2" FontSize="64" FontFamily="Wide Latin" FontWeight="Bold" Click="liczba_Click">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<Button x:Name="one" Content="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3" VerticalAlignment="Stretch" FontFamily="Wide Latin" FontSize="64" Click="liczba_Click">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<Button x:Name="two" Content="2" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3" VerticalAlignment="Stretch" Grid.Column="1" FontWeight="SemiBold" FontFamily="Wide Latin" FontSize="64" Click="liczba_Click">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<Button x:Name="six" Content="6" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" VerticalAlignment="Stretch" Grid.Column="2" FontFamily="Wide Latin" FontSize="64" Click="liczba_Click">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<Button x:Name="seven" Content="7" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Grid.Row="1" FontFamily="Wide Latin" FontSize="64" FontWeight="Bold" Click="liczba_Click">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<Button x:Name="four" Content="4" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" VerticalAlignment="Stretch" FontFamily="Wide Latin" FontSize="64" FontWeight="Bold" Click="liczba_Click">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<Button x:Name="three" Content="3" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3" VerticalAlignment="Stretch" Grid.Column="2" FontFamily="Wide Latin" FontSize="64" FontWeight="Bold" Click="liczba_Click">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<Button x:Name="eight" Content="8" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1" FontFamily="Wide Latin" FontSize="64" FontWeight="Bold" Click="liczba_Click" Padding="0">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<Button x:Name="nien" Content="9" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="2" FontFamily="Wide Latin" FontSize="64" FontWeight="Bold" Click="liczba_Click">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<Button x:Name="Cancel" Content="C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="2" FontFamily="Wide Latin" FontSize="64" Click="Cancel_Click">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<Button x:Name="CE" Content="CE" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Wide Latin" FontSize="64" FontWeight="SemiBold" Grid.ColumnSpan="2" Padding="0" Click="CE_Click" >
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-                <Button x:Name="sum" Content="+" Grid.Column="3" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" FontFamily="Wide Latin" FontSize="64" Click="liczba_Click">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-                <Button x:Name="minus" Content="-" Grid.Column="3" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1" VerticalAlignment="Stretch" FontFamily="Wide Latin" FontSize="64" Click="liczba_Click">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-                <Button x:Name="razy" Content="*" Grid.Column="3" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" VerticalAlignment="Stretch" FontFamily="Wide Latin" FontSize="64" Click="liczba_Click">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<TextBlock x:Name="pow" TextWrapping="Wrap" Text="y" FontSize="48" Margin="0,0,10,0" Grid.Row="3" Grid.Column="3" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Top" Padding="0">
-					<TextBlock.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="#FFBDE841" Offset="0"/>
-							<GradientStop Color="#FF38B2C6" Offset="1"/>
-						</LinearGradientBrush>
-					</TextBlock.Foreground>
-				</TextBlock>
-                <Button x:Name="POWER" Grid.Column="3" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3" VerticalAlignment="Stretch" FontFamily="Wide Latin" FontSize="64" Content="x" HorizontalContentAlignment="Left" Click="liczba_Click" >
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<Button x:Name="ZMIENNA" Content="X" Grid.Column="3" HorizontalAlignment="Stretch" Margin="0" Grid.Row="4" VerticalAlignment="Stretch" FontFamily="Wide Latin" FontSize="64" Click="liczba_Click" Padding="0" UseLayoutRounding="False">
-					<Button.BorderBrush>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FF2EAFD1" Offset="1"/>
-							<GradientStop Color="#FFD6F329" Offset="0.017"/>
-						</LinearGradientBrush>
-					</Button.BorderBrush>
-					<Button.Foreground>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="Black" Offset="0"/>
-							<GradientStop Color="#FFF4FF0B" Offset="1"/>
-							<GradientStop Color="#FF009DFF"/>
-						</LinearGradientBrush>
-					</Button.Foreground>
-				</Button>
-				<Button x:Name="plotuj" Content="Rysuj" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="5" FontFamily="Wide Latin" FontSize="53.333" BorderBrush="Black" Foreground="#FF1D1D1D" Click="plotuj_Click"  Padding="0" BorderThickness="0" Grid.ColumnSpan="4" Margin="0" >
-					<Button.Background>
-						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-							<GradientStop Color="#FFC1EA3D" Offset="0"/>
-							<GradientStop Color="#FF43B7BB" Offset="1"/>
-						</LinearGradientBrush>
-					</Button.Background>
-				</Button>
-			</Grid>
-			<TextBlock x:Name="funkcja" Margin="0" Grid.Row="4" TextWrapping="Wrap" SelectionHighlightColor="#00CB1591" FontFamily="Wide Latin" FontSize="48">
-				<TextBlock.Foreground>
-					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-						<GradientStop Color="#FFC1EA3D" Offset="0.004"/>
-						<GradientStop Color="#FF35B1C9" Offset="1"/>
-					</LinearGradientBrush>
-				</TextBlock.Foreground>
-			</TextBlock>
+			<Viewbox Grid.Column="1">
+				<Grid Height="574" Width="398">
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<Grid Margin="0" Grid.Row="1">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition/>
+							<ColumnDefinition/>
+						</Grid.ColumnDefinitions>
+						<Button x:Name="CE" Content="CE" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" FontSize="64" FontFamily="Wide Latin" Click="CE_Click">
+							<Button.Foreground>
+								<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+									<GradientStop Color="#FF9FD058" Offset="0"/>
+									<GradientStop Color="#FF63A288" Offset="1"/>
+								</LinearGradientBrush>
+							</Button.Foreground>
+						</Button>
+						<Button x:Name="X" Content="X" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" FontSize="64" FontFamily="Wide Latin" Click="Cancel_Click">
+							<Button.Foreground>
+								<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+									<GradientStop Color="#FF9FD058" Offset="0"/>
+									<GradientStop Color="#FF63A288" Offset="1"/>
+								</LinearGradientBrush>
+							</Button.Foreground>
+						</Button>
+					</Grid>
+					<TextBox x:Name="funkcja" TextWrapping="Wrap" Text="funkcja" FontFamily="Wide Latin" FontSize="40">
+						<TextBox.Background>
+							<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+								<GradientStop Color="#FF4BB9B2" Offset="0"/>
+								<GradientStop Color="#FF9FD058" Offset="1"/>
+							</LinearGradientBrush>
+						</TextBox.Background>
+					</TextBox>
+					<Button x:Name="rysuj" Content="Rysuj" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" VerticalAlignment="Stretch" FontFamily="Wide Latin" FontSize="64" Click="plotuj_Click">
+						<Button.Foreground>
+							<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+								<GradientStop Color="#FF88D275" Offset="0"/>
+								<GradientStop Color="#FF3CB3C1" Offset="1"/>
+							</LinearGradientBrush>
+						</Button.Foreground>
+					</Button>
+					<Button x:Name="nowy" Content="Nowy" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3" VerticalAlignment="Stretch" FontFamily="Wide Latin" FontSize="64" Click="nowy_Click">
+						<Button.Foreground>
+							<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+								<GradientStop Color="#FF8C987B" Offset="0"/>
+								<GradientStop Color="#FF438F86" Offset="1"/>
+							</LinearGradientBrush>
+						</Button.Foreground>
+						<Button.BorderBrush>
+							<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+								<GradientStop Color="#FF889378" Offset="0"/>
+								<GradientStop Color="#FF3E948B" Offset="1"/>
+							</LinearGradientBrush>
+						</Button.BorderBrush>
+					</Button>
+					<Grid Grid.Row="4">
+						<Grid.RowDefinitions>
+							<RowDefinition/>
+							<RowDefinition/>
+						</Grid.RowDefinitions>
+						<TextBlock x:Name="tick" Margin="0" TextWrapping="Wrap" Text="zoom" FontSize="26.667" FontFamily="Wide Latin" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF4BB9B2"/>
+						<Slider x:Name="slidertick" Margin="0" Grid.Row="1" Background="#FF4DB0AA" Minimum="1" Maximum="20"/>
+					</Grid>
+				</Grid>
+			</Viewbox>
 			<Canvas x:Name="plot" Grid.RowSpan="4" Background="#FF4BB9B2" Margin="20"/>
 		</Grid>
 
