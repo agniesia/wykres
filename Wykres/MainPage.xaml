@@ -24,18 +24,20 @@
 			<RowDefinition Height="0.2*"/>
 			<RowDefinition Height="0.8*"/>
 		</Grid.RowDefinitions>
-		<TextBlock x:Name="title" Margin="0" TextWrapping="Wrap" FontSize="96" FontFamily="Wide Latin" SelectionHighlightColor="#FFE0139F" UseLayoutRounding="False" HorizontalAlignment="Center" VerticalAlignment="Center">
-			<TextBlock.Foreground>
-				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-					<GradientStop Color="Black" Offset="0"/>
-					<GradientStop Color="#FF498F9D" Offset="1"/>
-					<GradientStop Color="#FFBEE840" Offset="0.009"/>
-				</LinearGradientBrush>
-			</TextBlock.Foreground>
-			<Run Text="WYKR"/>
-			<Run Text="E"/>
-			<Run Text="SY"/>
-		</TextBlock>
+		<Viewbox>
+			<TextBlock x:Name="title" Margin="0" TextWrapping="Wrap" FontSize="96" FontFamily="Wide Latin" SelectionHighlightColor="#FFE0139F" UseLayoutRounding="False" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<TextBlock.Foreground>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="Black" Offset="0"/>
+						<GradientStop Color="#FF498F9D" Offset="1"/>
+						<GradientStop Color="#FFBEE840" Offset="0.009"/>
+					</LinearGradientBrush>
+				</TextBlock.Foreground>
+				<Run Text="WYKR"/>
+				<Run Text="E"/>
+				<Run Text="SY"/>
+			</TextBlock>
+		</Viewbox>
 		<Grid x:Name="gridokna" Grid.Row="1" Margin="20">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="0.7*"/>
@@ -108,7 +110,7 @@
 							<RowDefinition/>
 						</Grid.RowDefinitions>
 						<TextBlock x:Name="tick" Margin="0" TextWrapping="Wrap" Text="zoom" FontSize="26.667" FontFamily="Wide Latin" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF4BB9B2"/>
-						<Slider x:Name="slidertick" Margin="0" Grid.Row="1" Background="#FF4DB0AA" Minimum="1" Maximum="20"/>
+                        <Slider x:Name="slidertick" Margin="0" Grid.Row="1" Background="#FF4DB0AA" Minimum="1" Maximum="20"  ValueChanged="slidertick_ValueChanged"/>
 					</Grid>
 				</Grid>
 			</Viewbox>

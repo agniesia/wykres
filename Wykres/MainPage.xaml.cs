@@ -95,14 +95,14 @@ namespace Wykres
             lineOY.X2 = (int)(plot.ActualWidth / 2);
             lineOY.Y1 = 0;
             lineOY.Y2 = (int)(plot.ActualHeight);
-            lineOY.Stroke = new SolidColorBrush(Colors.Red);
+            lineOY.Stroke = new SolidColorBrush(Colors.Black);
             plot.Children.Add(lineOY);
             Line lineOX = new Line();
             lineOX.X1 = 0;
             lineOX.X2 = (int)(plot.ActualWidth);
             lineOX.Y1 = (int)(plot.ActualHeight / 2);
             lineOX.Y2 = (int)(plot.ActualHeight / 2);
-            lineOX.Stroke = new SolidColorBrush(Colors.Red);
+            lineOX.Stroke = new SolidColorBrush(Colors.Black);
             plot.Children.Add(lineOX);
             var p =(int)(zoom());
             podzialkaox(podzialka*p);
@@ -153,8 +153,24 @@ namespace Wykres
         {
             plot.Children.Clear();
             ukladwspolrzednych(20);
-
+            slidertick.Value = 0;
+            funkcja.Text = "";
+            
         }
+
+        private void slidertick_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            try
+            {
+                plot.Children.Clear();
+                plotuj_Click(sender, e);
+            }
+            catch (NullReferenceException t) { }
+        }
+        
+        
+
+       
 
 
     }
